@@ -1,0 +1,81 @@
+baseURL = 'https://dlabde.github.io/'
+languageCode = 'zh-cn'
+title = "DZD's Blog"
+theme = 'PaperMod'
+
+# 启用文章摘要显示
+summaryLength = 30
+
+# 代码高亮
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+# 主导航菜单
+[[menu.main]]
+  name = '文章'
+  pageRef = '/posts'
+  weight = 10
+[[menu.main]]
+  name = '项目'
+  pageRef = '/projects'
+  weight = 20
+[[menu.main]]
+  name = '关于'
+  pageRef = '/about'
+  weight = 30
+[[menu.main]]
+  name = '阅读'
+  pageRef = '/reading'
+  weight = 40
+[[menu.main]]
+  name = '生活'
+  pageRef = '/life'
+  weight = 50
+[[menu.main]]
+  name = '标签'
+  pageRef = '/tags'
+  weight = 60
+[[menu.main]]
+  name = '搜索'
+  pageRef = '/search'
+  weight = 70
+
+# PaperMod 主题配置
+[params]
+  # 首页显示文章列表的 section
+  mainSections = ['posts']
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+  # 首页欢迎信息
+  [params.homeInfoParams]
+    Title = "欢迎来到我的个人网站"
+    Content = "技术分享 · 项目展示 · 读书笔记 · 生活记录"
+
+  # 社交链接
+  [params.social]
+    github = 'DLABDE'
+
+  # Giscus 评论系统 — 等 GitHub Discussions 启用后取消注释
+  # [params.comments]
+  #   enabled = true
+  #   provider = 'giscus'
+  #   [params.comments.giscus]
+  #     repo = 'DLABDE/DLABDE.github.io'
+  #     repoId = ''
+  #     category = 'General'
+  #     categoryId = ''
+  #     mapping = 'pathname'
+  #     reactionsEnabled = '1'
+  #     emitMetadata = '0'
+  #     inputPosition = 'bottom'
+  #     lang = 'zh-CN'
+
+# 搜索
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
